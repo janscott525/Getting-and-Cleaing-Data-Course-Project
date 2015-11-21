@@ -49,4 +49,4 @@ colnames(tst_trn_final) <- tst_trn_cnames
 
 ##5.Subsets averag of activity
 Avg_Sub_Act = ddply(tst_trn_final, c("Subject_ID","Activity_ID"), numcolwise(mean))
-write.table(Avg_Sub_Act, file = "Avg_Sub_Act.txt")
+write.table(Avg_Sub_Act, file = "Avg_Sub_Act.txt", row.name=FALSE)
